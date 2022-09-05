@@ -7,6 +7,8 @@ class BookList extends Component {
     searchQuery: '',
   }
 
+  setSelected = (value) => {this.props.setFnction(value)}
+
   render() {
     return (
       <Container>
@@ -30,7 +32,7 @@ class BookList extends Component {
             )
             .map((b) => (
               <Col xs={3} key={b.asin}>
-                <SingleBook book={b} />
+                <SingleBook book={b} setFunction={this.setSelected} selected={this.props.selected}/>
               </Col>
             ))}
         </Row>

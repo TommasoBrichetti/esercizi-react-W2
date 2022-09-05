@@ -3,16 +3,20 @@ import { Card } from 'react-bootstrap'
 import CommentArea from './CommentArea'
 
 class SingleBook extends Component {
-  state = {
-    selected: false,
+
+  state={
+    selected: false
   }
 
   render() {
+
     return (
       <>
         <Card
-          onClick={() => this.setState({ selected: !this.state.selected })}
-          style={{ border: this.state.selected ? '3px solid red' : 'none' }}
+          onClick={() => {
+            this.props.setFunction(this.props.book)
+          }}
+          style={{ border: this.props.book === this.props.selected ? '3px solid red' : 'none' }}
         >
           <Card.Img variant="top" src={this.props.book.img} />
           <Card.Body>
@@ -21,7 +25,7 @@ class SingleBook extends Component {
             </Card.Title>
           </Card.Body>
         </Card>
-        {this.state.selected && <CommentArea asin={this.props.book.asin} />}
+        {/* {this.state.selected && <CommentArea asin={this.props.book.asin} />} */}
       </>
     )
   }
