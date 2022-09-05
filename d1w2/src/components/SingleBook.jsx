@@ -16,7 +16,7 @@ class SingleBook extends Component {
           onClick={() => {
             this.props.setFunction(this.props.book)
           }}
-          style={{ border: this.props.book === this.props.selected ? '3px solid red' : 'none' }}
+          style={{ border: this.props.book === this.props.selected ? '3px solid red' : '3px solid #282c34' }}
         >
           <Card.Img variant="top" src={this.props.book.img} />
           <Card.Body>
