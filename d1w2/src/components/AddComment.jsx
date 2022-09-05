@@ -10,8 +10,19 @@ class AddComment extends Component {
     },
   }
 
+
+
   sendComment = async (e) => {
+
+    this.setState({
+      comment: {
+        ...this.state.comment,
+        elementId:this.props.asin,
+      },
+    })
+
     e.preventDefault()
+
     try {
       let response = await fetch(
         'https://striveschool-api.herokuapp.com/api/comments',
