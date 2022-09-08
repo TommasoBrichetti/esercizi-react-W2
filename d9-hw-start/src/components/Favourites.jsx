@@ -25,7 +25,7 @@ const Favourites = () => {
                 <ul style={{ listStyle: 'none' }}>
                     {jobsContent.map((job, i) => (
                         <li key={i} className="my-4 p-3" style={{ border: '1px solid #000', borderRadius: 4 }}>
-                            <h2>{job.company_name}</h2>
+                            <Link to={`/${job.company_name}`}><h2>{job.company_name}</h2></Link>
                             <h3>{job.title} - {job.job_type}</h3>
                             <Button variant="danger" onClick={() => {
                                 dispach({
