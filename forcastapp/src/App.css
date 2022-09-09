@@ -1,0 +1,123 @@
+.App {
+    height: 100%;
+    /* background-image: url(../public/depositphotos_43185445-stock-photo-color-blurred-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    padding-bottom: 5vh;
+    background-color: rgb(40, 37, 37);
+}
+
+.nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10vw 5vh 10vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.input {
+    border: 1px solid green;
+    padding: .5rem;
+    width: 15vw;
+    border-radius: 100px;
+    text-align: center;
+    color: green;
+}
+
+.button {
+    padding: .5rem 2rem;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 100px;
+    color: white;
+}
+
+.button:hover {
+    background-color: white;
+    color: green;
+}
+
+
+.landing {
+    height: 130vh;
+}
+
+
+
+.card {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-shadow: 0 0 3px white;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainTemp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainTemp div {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.future {
+    margin: 0 auto;
+    height: 20vh;
+    width: 80%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+.future::-webkit-scrollbar{display: none;}
+
+.fcard {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contols{
+    
+    position: absolute;
+
+
+}
+.contols button {
+
+   border: none;
+   background: none;
+}
